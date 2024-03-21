@@ -1,4 +1,4 @@
-#pragma once
+
 #include "Player.h" 
 
 class HumanPlayer :public Player {
@@ -9,7 +9,7 @@ private:
 
 public:
 
-	void UserName();
+	void getUserName2();
 
 
 

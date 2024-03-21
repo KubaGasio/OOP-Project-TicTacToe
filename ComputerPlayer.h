@@ -1,7 +1,7 @@
-#pragma once
+
 #include "Player.h" 
 
-class ComputerPlayer {
+class ComputerPlayer :public Player{
 
 public:
 

@@ -2,6 +2,10 @@
 
 Game::Game() {
     WCounter = 0;
+    CurrentSize = 0;
+    Full = false;
+    GameBoard[3][3] = {};
+    Win = false;
 }
 bool Game::CheckWin() {
     if (GameBoard[0][0] == GameBoard[0][1] && GameBoard[0][1] == GameBoard[0][2]) {
@@ -45,3 +49,20 @@ void Game::DrawBoard() {
     }
 
 }
+void Game::WinCounter() {
+    if (Win = true) {
+        WCounter++;
+        Win = false;
+    }
+    
+}
+bool Game::isFull() {
+    if (CurrentSize == 9) {
+        Full = true;
+    }
+    else {
+        Full = false;
+    }
+    return Full;
+}
+

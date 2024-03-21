@@ -9,7 +9,7 @@ using namespace std;
 
 class Game {
 
-private:
+protected:
 
 	char GameBoard[3][3];
 
@@ -17,7 +17,8 @@ private:
 
 	int WCounter;
 
-	bool isFull;
+	bool Full;
+	int CurrentSize;
 
 public:
 
@@ -27,9 +28,10 @@ public:
 
 	void DrawBoard();
 
-	int WinCounter();
+	void WinCounter();
 
 	bool isFull();
+	
 
 
 
